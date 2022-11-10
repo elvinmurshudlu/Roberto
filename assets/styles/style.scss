@@ -872,8 +872,10 @@ main{
                 }
                 .input{
                     position: relative;
+                    
                     width: 380px;
                     input{
+                        outline: 0;
                         width: 380px;
                         background-color: #3e525f;
                         border-radius: 20px;
@@ -887,6 +889,11 @@ main{
                         top: 4px;
                         right: 3px;
                         color: #1cc3b2;
+                        cursor: pointer;
+                        transition: 0.4s;
+                    }
+                    i:hover{
+                        color: #082e2a;
                     }
                 }
             }

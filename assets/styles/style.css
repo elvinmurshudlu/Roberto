@@ -787,6 +787,7 @@ main .footer--info_subscribe .input {
   width: 380px;
 }
 main .footer--info_subscribe .input input {
+  outline: 0;
   width: 380px;
   background-color: #3e525f;
   border-radius: 20px;
@@ -799,6 +800,11 @@ main .footer--info_subscribe .input i {
   top: 4px;
   right: 3px;
   color: #1cc3b2;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .footer--info_subscribe .input i:hover {
+  color: #082e2a;
 }
 main .footer--social {
   width: 100%;
