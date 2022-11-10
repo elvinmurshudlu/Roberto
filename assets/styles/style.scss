@@ -802,32 +802,107 @@ main{
         width: 100%;
         height: 60vh;
         background-color: #0e2737 ;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        &-logo{
-            line-height: 25px;
-            color: grey;
-            li{
-                width: 300px;
+        
+
+        &--info{
+            width: 100%;
+            height: 85%;
+            display: flex;
+            justify-content: center;
+            column-gap: 90px;
+            align-items: center;
+            &_logo{
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                h1{
+                    color: white;
+                    font-size: 45px;
+                    font-weight: 100;
+                    
+                }
+                h1::first-letter ,h2{
+                    color: #1cc3b2;
+                }
+                h4{
+                    color: grey;
+                }
             }
-            li:nth-child(2){
-                color: #1cc3b2;
-                font-size: 25px;
+            &_blog{
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                h1{
+                    color: white;
+                }
+                h4{
+                    color: white;
+                    font-size: 18px;
+                    span{
+                        color: grey;
+                    }
+                }
+
             }
-        }
-        &-blog{
-            line-height: 35px;
-            color: grey;
-            li:first-child{
+            &_list{
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px
+                ;
+                h1{
+                    font-size: 30px;
+                    color: white;
+                }
+                ul{
+
+                    color: grey;
+                    line-height: 30px;
+                }
+            }
+            &_subscribe{
                 color: white;
-                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px
+                ;
+                h3{
+                    color: grey;
+                    width: 400px;
+
+                }
+                .input{
+                    position: relative;
+                    width: 380px;
+                    input{
+                        width: 380px;
+                        background-color: #3e525f;
+                        border-radius: 20px;
+                        padding: 10px 14px;
+                        font-size: 16px;
+                        
+                    }
+                    i{
+                        position: absolute;
+                        font-size: 35px;
+                        top: 4px;
+                        right: 3px;
+                        color: #1cc3b2;
+                    }
+                }
             }
+            
         }
-        &-links{
+        &--social{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
             color: grey;
-            line-height: 25px;
-            font-size: 18px;
+            padding-bottom: 10px;
+
         }
+        
+        
     }
 }
